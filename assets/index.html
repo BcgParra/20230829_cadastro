@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form">
+            <p class="title">Registro</p>
+
+            <label>
+                <input class="input" id="nome" type="text" placeholder="" required="" focus>
+                <span>Nome</span>
+            </label>
+            <label>
+                <input class="input" id="rua" type="text" placeholder="" required="">
+                <span>Rua</span>
+            </label>
+            <label>
+                <input class="input" id="bairro" type="text" placeholder="" required="">
+                <span>Bairro</span>
+            </label>
+            <label>
+                <input class="input" id="cidade" type="text" placeholder="" required="">
+                <span>Cidade - SP</span>
+            </label>
+
+            <label>
+                <input class="input" id="cep" type="text" placeholder="" required="">
+                <span>CEP</span>
+            </label>
+
+            <label>
+                <input class="input" id="celular" type="text" placeholder="" required="">
+                <span>Celular</span>
+            </label>
+
+
+            <label>
+                <input class="input" id="email" type="email" placeholder="" required="">
+                <span>Email</span>
+            </label>
+
+            <!--   <label>
+            <input class="input" type="password" placeholder="" required="">
+            <span>Password</span>
+        </label>
+        <label>
+            <input class="input" type="password" placeholder="" required="">
+            <span>Confirm password</span>
+        </label> -->
+            <button class="botao" id="botao" onclick="limpaForm()">Enviar</button>
+            <!--<p class="signin">Already have an acount ? <a href="#">Signin</a> </p> -->
+
+
+        </form>
+
+    </div>
+
+</body>
+
+<script src="../js/main.js"></script>
+<script src="../js/cep.js"></script>
+<script src="../js/limpa.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script>
+
+$('#cep').mask('00000-000');
+$('#celular').mask('(00) 00000-0000');
+
+</script>
+
+</html>
